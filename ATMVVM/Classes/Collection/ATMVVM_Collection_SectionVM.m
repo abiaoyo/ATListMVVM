@@ -1,0 +1,69 @@
+#import "ATMVVM_Collection_SectionVM.h"
+#import "ATMVVM_Collection_ReusableView.h"
+
+@interface ATMVVM_Collection_SectionVM()
+
+@property (nonatomic, copy) ATMVVM_Collection_SectionVM_ReloadViewBlock _Nonnull reloadViewBlock;
+@property (nonatomic, copy) ATMVVM_Collection_SectionVM_RefreshViewBlock _Nonnull refreshHeaderViewBlock;
+@property (nonatomic, copy) ATMVVM_Collection_SectionVM_RefreshViewBlock _Nonnull refreshFooterViewBlock;
+
+@end
+
+@implementation ATMVVM_Collection_SectionVM
+
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        [self _setupBlocks];
+        [self setupData];
+    }
+    return self;
+}
+
+- (void)_setupBlocks{
+    __weak typeof(self) weakSelf = self;
+    self.reloadViewBlock = ^{
+        [weakSelf.collectionView reloadData];
+    };
+    self.refreshHeaderViewBlock = ^{
+        UICollectionView * collectionView = weakSelf.collectionView;
+        NSIndexPath * indexPath = weakSelf.indexPath;
+        
+        if(collectionView && indexPath) {
+            ATMVVM_Collection_ReusableView * header = (ATMVVM_Collection_ReusableView *)[collectionView supplementaryViewForElementKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
+            if(header){
+                [header refreshSubviews:YES];
+                [header layoutIfNeeded];
+            }
+        }
+    };
+    self.refreshFooterViewBlock = ^{
+        UICollectionView * collectionView = weakSelf.collectionView;
+        NSIndexPath * indexPath = weakSelf.indexPath;
+        
+        if(collectionView && indexPath) {
+            ATMVVM_Collection_ReusableView * footer = (ATMVVM_Collection_ReusableView *)[collectionView supplementaryViewForElementKind:UICollectionElementKindSectionFooter atIndexPath:indexPath];
+            if(footer){
+                [footer refreshSubviews:YES];
+                [footer layoutIfNeeded];
+            }
+        }
+    };
+}
+
+- (void)setupData{
+    
+}
+
+- (void)createLayout{
+    
+}
+
+- (NSMutableArray<ATMVVM_Collection_ItemVM *> *)itemVMs{
+    if(!_itemVMs){
+        _itemVMs = [NSMutableArray new];
+    }
+    return _itemVMs;
+}
+
+@end

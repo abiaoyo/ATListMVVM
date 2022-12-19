@@ -15,19 +15,12 @@
 - (void)setupData{}
 - (void)setupSubviews{}
 - (void)setupLayout{}
-- (void)configWithRowVM:(ATMVVM_Table_Row *)rowVM indexPath:(NSIndexPath *)indexPath{
+- (void)configWithRowVM:(ATMVVM_Table_RowVM *)rowVM indexPath:(NSIndexPath *)indexPath{
     self.indexPath = indexPath;
     [self configAndRefresh:rowVM];
 }
-- (void)configAndRefresh:(ATMVVM_Table_Row *)rowVM{
-    self.rowVM.refreshViewBlock = nil;
+- (void)configAndRefresh:(ATMVVM_Table_RowVM *)rowVM{
     self.rowVM = rowVM;
-    
-    __weak typeof(self) weakSelf = self;
-    self.rowVM.refreshViewBlock = ^{
-        [weakSelf refreshSubviews:YES];
-        [weakSelf layoutIfNeeded];
-    };
     [self refreshSubviews:NO];
     [self layoutIfNeeded];
 }

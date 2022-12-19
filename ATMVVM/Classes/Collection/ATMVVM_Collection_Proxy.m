@@ -1,43 +1,48 @@
 #import "ATMVVM_Collection_Proxy.h"
-#import "ATMVVM_Collection_Cell.h"
-#import "ATMVVM_Collection_ReusableView.h"
 
 @interface ATMVVM_Collection_Proxy()
 
-@property (nonatomic, strong) ATMVVM_Collection_Section * defaultSectionVM;
-@property (nonatomic, strong) NSMutableArray<ATMVVM_Collection_Section *> * sectionVMs;
+@property (nonatomic, strong) ATMVVM_Collection_SectionVM * defaultSectionVM;
+@property (nonatomic, strong) NSMutableArray<ATMVVM_Collection_SectionVM *> * sectionVMs;
 
 @end
 
 @implementation ATMVVM_Collection_Proxy
 
-- (ATMVVM_Collection_Section *)defaultSectionVM {
+- (ATMVVM_Collection_SectionVM *)defaultSectionVM {
     if(!_defaultSectionVM){
-        _defaultSectionVM = [[ATMVVM_Collection_Section alloc] init];
+        _defaultSectionVM = [[ATMVVM_Collection_SectionVM alloc] init];
     }
     return _defaultSectionVM;
 }
 
-- (NSMutableArray<ATMVVM_Collection_Section *> *)sectionVMs {
+- (NSMutableArray<ATMVVM_Collection_SectionVM *> *)sectionVMs {
     if(!_sectionVMs){
         _sectionVMs = [NSMutableArray new];
     }
     return _sectionVMs;
 }
 
-- (ATMVVM_Collection_Section *)getSectionVM:(NSInteger)section {
+- (ATMVVM_Collection_SectionVM *)getSectionVM:(NSInteger)section {
     if(_defaultSectionVM == nil) {
-        return self.sectionVMs[section];
+        if(section < self.sectionVMs.count){
+            return self.sectionVMs[section];
+        }
+        return nil;
     }
     return self.defaultSectionVM;
 }
 
-- (ATMVVM_Collection_Item *)getItemVM:(NSInteger)section item:(NSInteger)item {
-    return [self getSectionVM:section].itemVMs[item];
+- (ATMVVM_Collection_ItemVM *)getItemVM:(NSInteger)section item:(NSInteger)item {
+    ATMVVM_Collection_SectionVM * sectionVM = [self getSectionVM:section];
+    if(item < sectionVM.itemVMs.count){
+        return sectionVM.itemVMs[item];
+    }
+    return nil;
 }
 
-- (ATMVVM_Collection_Item *)getItemVM:(NSIndexPath *)indexPath {
-    return [self getSectionVM:indexPath.section].itemVMs[indexPath.item];
+- (ATMVVM_Collection_ItemVM *)getItemVM:(NSIndexPath *)indexPath {
+    return [self getItemVM:indexPath.section item:indexPath.item];
 }
 
 //UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
@@ -53,25 +58,34 @@
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    ATMVVM_Collection_Item * itemVM = [self getItemVM:indexPath];
+    ATMVVM_Collection_ItemVM * itemVM = [self getItemVM:indexPath];
     ATMVVM_Collection_Cell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:itemVM.cellId forIndexPath:indexPath];
     [cell configWithItemVM:itemVM indexPath:indexPath];
+    if(self.delegate && [self.delegate respondsToSelector:@selector(atmvvm_CollectionView:cell:indexPath:itemVM:)]){
+        [self.delegate atmvvm_CollectionView:collectionView cell:cell indexPath:indexPath itemVM:itemVM];
+    }
     return cell;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    ATMVVM_Collection_Section * sectionVM = [self getSectionVM:indexPath.section];
+    ATMVVM_Collection_SectionVM * sectionVM = [self getSectionVM:indexPath.section];
     if([kind isEqualToString:UICollectionElementKindSectionHeader]){
         if(sectionVM.headerId){
             ATMVVM_Collection_ReusableView * header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:sectionVM.headerId forIndexPath:indexPath];
             [header configWithSectionVM:sectionVM indexPath:indexPath];
+            
+            if(self.delegate && [self.delegate respondsToSelector:@selector(atmvvm_CollectionView:header:kind:indexPath:sectionVM:)]){
+                [self.delegate atmvvm_CollectionView:collectionView header:header kind:kind indexPath:indexPath sectionVM:sectionVM];
+            }
             return header;
         }
-    }
-    if([kind isEqualToString:UICollectionElementKindSectionFooter]){
-        if(sectionVM.headerId){
+    }else if([kind isEqualToString:UICollectionElementKindSectionFooter]){
+        if(sectionVM.footerId){
             ATMVVM_Collection_ReusableView * footer = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:sectionVM.footerId forIndexPath:indexPath];
             [footer configWithSectionVM:sectionVM indexPath:indexPath];
+            if(self.delegate && [self.delegate respondsToSelector:@selector(atmvvm_CollectionView:footer:kind:indexPath:sectionVM:)]){
+                [self.delegate atmvvm_CollectionView:collectionView footer:footer kind:kind indexPath:indexPath sectionVM:sectionVM];
+            }
             return footer;
         }
     }
@@ -79,26 +93,24 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    ATMVVM_Collection_Section * sectionVM = [self getSectionVM:indexPath.section];
+    ATMVVM_Collection_SectionVM * sectionVM = [self getSectionVM:indexPath.section];
     sectionVM.indexPath = indexPath;
-    sectionVM.reloadViewBlock = ^{
-        [collectionView reloadData];
-    };
+    sectionVM.collectionView = collectionView;
     
-    ATMVVM_Collection_Item * itemVM = [self getItemVM:indexPath];
+    ATMVVM_Collection_ItemVM * itemVM = [self getItemVM:indexPath];
     itemVM.indexPath = indexPath;
-    itemVM.reloadViewBlock = ^{
-        [collectionView reloadData];
-    };
+    itemVM.collectionView = collectionView;
     return itemVM.itemSize;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-    return [self getSectionVM:section].headerSize;
+    ATMVVM_Collection_SectionVM * sectionVM = [self getSectionVM:section];
+    return sectionVM.headerSize;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
-    return [self getSectionVM:section].footerSize;
+    ATMVVM_Collection_SectionVM * sectionVM = [self getSectionVM:section];
+    return sectionVM.footerSize;
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
@@ -114,7 +126,8 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ATMVVM_Collection_Item * itemVM = [self getItemVM:indexPath];
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    ATMVVM_Collection_ItemVM * itemVM = [self getItemVM:indexPath];
     if(itemVM.didSelectItemBlock){
         itemVM.didSelectItemBlock(collectionView, indexPath, itemVM);
     }

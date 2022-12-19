@@ -15,19 +15,12 @@
 - (void)setupData{}
 - (void)setupSubviews{}
 - (void)setupLayout{}
-- (void)configWithSectionVM:(ATMVVM_Table_Section *)sectionVM section:(NSInteger)section{
+- (void)configWithSectionVM:(ATMVVM_Table_SectionVM *)sectionVM section:(NSInteger)section{
     self.section = section;
     [self configAndRefresh:sectionVM];
 }
-- (void)configAndRefresh:(ATMVVM_Table_Section *)sectionVM{
-    self.sectionVM.refreshViewBlock = nil;
+- (void)configAndRefresh:(ATMVVM_Table_SectionVM *)sectionVM{
     self.sectionVM = sectionVM;
-    
-    __weak typeof(self) weakSelf = self;
-    self.sectionVM.refreshViewBlock = ^{
-        [weakSelf refreshSubviews:YES];
-        [weakSelf layoutIfNeeded];
-    };
     [self refreshSubviews:NO];
     [self layoutIfNeeded];
 }

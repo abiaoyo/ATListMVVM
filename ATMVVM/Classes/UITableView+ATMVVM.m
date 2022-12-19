@@ -9,6 +9,7 @@
     if(@available(iOS 15.0, *)){
         self.sectionHeaderTopPadding = 0;
     }
+    [self registerClass:NSClassFromString(@"ATMVVM_Table_HeaderFooterView") forHeaderFooterViewReuseIdentifier:@"ATMVVM_Table_HeaderFooterView"];
 }
 
 

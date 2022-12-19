@@ -15,19 +15,13 @@
 - (void)setupData{}
 - (void)setupSubviews{}
 - (void)setupLayout{}
-- (void)configWithItemVM:(ATMVVM_Collection_Item *)itemVM indexPath:(NSIndexPath *)indexPath{
+- (void)configWithItemVM:(ATMVVM_Collection_ItemVM *)itemVM indexPath:(NSIndexPath *)indexPath{
     self.indexPath = indexPath;
     [self configAndRefresh:itemVM];
 }
-- (void)configAndRefresh:(ATMVVM_Collection_Item *)itemVM{
-    self.itemVM.refreshViewBlock = nil;
+- (void)configAndRefresh:(ATMVVM_Collection_ItemVM *)itemVM{
     self.itemVM = itemVM;
     
-    __weak typeof(self) weakSelf = self;
-    self.itemVM.refreshViewBlock = ^{
-        [weakSelf refreshSubviews:YES];
-        [weakSelf layoutIfNeeded];
-    };
     [self refreshSubviews:NO];
     [self layoutIfNeeded];
 }
