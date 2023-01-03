@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12DE9661348114D44340B61EE1435995 /* Pods-ATMVVMDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6817D6F883DC64EA4A56D5A1099245D0 /* Pods-ATMVVMDemo-dummy.m */; };
+		141BE42334B42ECA3657FDFAA6ED54E7 /* ATMVVM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B84F969693DD88FD0E71E785CC2DB /* ATMVVM-dummy.m */; };
+		1F096998B3B972A16E77CDC1E8777AC1 /* ATMVVM_Table_SectionVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A96279C15509D544A97588C2CC3162 /* ATMVVM_Table_SectionVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FE5CD996C6528F26C1FC9EB1C1ADCB6 /* ATMVVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2661660081E1A9A286F430FF2535555C /* ATMVVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21FC11033E849F93CBF4F7A95BC186C0 /* ATMVVM_Collection_ItemVM.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A336D2FBD887F590A8B32760A1A3F /* ATMVVM_Collection_ItemVM.m */; };
+		2234B2EC3BAD12265FA5F644E3B993BE /* Pods-ATMVVMDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6254FE657965211A55B923B0379F1CDD /* Pods-ATMVVMDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E4CDCBC812456A9E3C8CD49B923319 /* ATMVVM_Table_ListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 278933886CCE89A12F3F195AA246BA81 /* ATMVVM_Table_ListVM.m */; };
+		2DBDEAAEF6618E62F9C2752E33A7D273 /* ATMVVM_Collection_SectionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF2643E59296CB80A68316E58BE43A1 /* ATMVVM_Collection_SectionVM.m */; };
+		32F0DD81B94618F8C326746B8A747A53 /* ATMVVMDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = CB746458991DEA3E2FF3CAC542E4B619 /* ATMVVMDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34E9DC0F5B9B4598BEE5CE5FCD9A7312 /* UICollectionView+ATMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 605A499290A98067AFD4D33AA94D58EF /* UICollectionView+ATMVVM.m */; };
+		35F223D69184E979513D703BD2DCBF02 /* ATMVVM_Collection_ListVM.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD61D05AE20EED508D505A19013FA01 /* ATMVVM_Collection_ListVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEC9FF2BF2251949F86E9265883AE03 /* ATMVVM_Table_RowVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE3C9002831D3A4F0F85EC81A5D759F /* ATMVVM_Table_RowVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		450DD3F7B6B3E7EF69CE2AD059DF2B1D /* ATMVVM_Table_HeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2A933D6E72AC01C6D7996D631DBC6A /* ATMVVM_Table_HeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CE32F5EADAEAC6BB83D73929005AAF /* ATMVVM_Table_HeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880CB0E26315ED4B51B1D3F20D7F32AF /* ATMVVM_Table_HeaderFooterView.m */; };
+		48C7700D9CAB78E4C0EBA5D43D10D246 /* ATMVVM_Collection_ItemVM.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDA8918A88102D3F4D30D5076D3A3B5 /* ATMVVM_Collection_ItemVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8AEA8B3225A158F63D00F5C7827840 /* ATMVVM_Collection_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F12B38A35FD24CD7635E70781271588 /* ATMVVM_Collection_Cell.m */; };
+		575CD4A40208E296F787B91E96C21B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5C71851CB9C8015D0CA52ED59077C0A9 /* ATMVVM_Table_Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9666595257538AEC117F693262EA663B /* ATMVVM_Table_Proxy.m */; };
+		7D292A50F045393874651BE1B1B745DA /* ATMVVM_Collection_ReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6FF98A101555CCEC186F3E4B3A791FC /* ATMVVM_Collection_ReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AED10CBFA3B52256F8B0FD95E743911 /* UITableView+ATMVVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F01EF46A8899A514B021219AD853EC /* UITableView+ATMVVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95645C77F003C9EC05288F9F6792E4C1 /* ATMVVM_Table_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E3134312903CAE65658D7FBD23DC4 /* ATMVVM_Table_Cell.m */; };
+		98EA92CE344D120D98FE5A8F94A44F2F /* ATMVVM_Table_Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = FAEE1A9927C5EA919D82746CF2451498 /* ATMVVM_Table_Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99080F6EAD4510FC2293F89BA66B2B30 /* ATMVVM_Collection_Cell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E07B9841DC7DDBC3C33EDDCADFEC6E4 /* ATMVVM_Collection_Cell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF7C6B03B4E09A58E1740805BA23726 /* ATMVVM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C758D421AEA18857A14D204697BA3108 /* ATMVVM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A19D513A0644F1100A1988B4993FF5E8 /* ATMVVM_Collection_ListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2301082A4EFB48A90B1947CD0695D34B /* ATMVVM_Collection_ListVM.m */; };
+		AF568036446840FDFCDA153B29233A15 /* ATMVVM_Table_ListVM.h in Headers */ = {isa = PBXBuildFile; fileRef = C68F9AACC9562FD31888AEF8F1BE1086 /* ATMVVM_Table_ListVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B20DCDD46D3A66114AF3155743950B8E /* ATMVVM_Collection_SectionVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 690F7EB503A76D7DC1804A7125A37950 /* ATMVVM_Collection_SectionVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9527D04E755F267C749E492764D7913 /* ATMVVM_Collection_Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8A3A5347945CEA12CF3EE7B3499D92 /* ATMVVM_Collection_Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBAF0161A11000FF214A4BDA407F0606 /* UITableView+ATMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FA84D67864F4BD4839C2438F866FCE /* UITableView+ATMVVM.m */; };
+		CEFF734B4AE76C5DD981A9F8088E77C3 /* UICollectionView+ATMVVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CF1F839476427500AAA2649BA671FB /* UICollectionView+ATMVVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D186D3CF808A9515A9AFF7C57A784D1C /* ATMVVM_Collection_Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C67177D733A7F5D4D555F8F9E3080 /* ATMVVM_Collection_Proxy.m */; };
+		D8EC72F4139FF4FCD0CF7E5D991005EF /* ATMVVM_Table_RowVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B61BBAFF7FBE51C56442406B5F8A5E /* ATMVVM_Table_RowVM.m */; };
+		E52CCF6BE75B369C706B32D7BBCCC720 /* ATMVVM_Collection_ReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D20831E843059B4CA93FF23102DAF4D /* ATMVVM_Collection_ReusableView.m */; };
+		EA23C3114DC47288CE5A8EEA949AF389 /* ATMVVM_Table_SectionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9764543560559D00DF5F28A7CDA21 /* ATMVVM_Table_SectionVM.m */; };
+		FE170867B5BE0C8AFDFA34E654E85780 /* ATMVVM_Table_Cell.h in Headers */ = {isa = PBXBuildFile; fileRef = C15ED1A15034FEE4BC30B5E116ECAD1B /* ATMVVM_Table_Cell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBB1675DA7641F77960B39755D8D82A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FFF40FC7C075E661BC4A3FD62174BAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D742B6342FC6A175F8B24DA692708C9;
+			remoteInfo = ATMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9729F2508E8B31D059817765553194 /* ATMVVM-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ATMVVM-prefix.pch"; sourceTree = "<group>"; };
+		0D8E3134312903CAE65658D7FBD23DC4 /* ATMVVM_Table_Cell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_Cell.m; sourceTree = "<group>"; };
+		2301082A4EFB48A90B1947CD0695D34B /* ATMVVM_Collection_ListVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_ListVM.m; sourceTree = "<group>"; };
+		2661660081E1A9A286F430FF2535555C /* ATMVVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ATMVVM.h; path = ATMVVM/Classes/ATMVVM.h; sourceTree = "<group>"; };
+		278933886CCE89A12F3F195AA246BA81 /* ATMVVM_Table_ListVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_ListVM.m; sourceTree = "<group>"; };
+		27C414D288422F0E100E08E69BF5D9DE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2B8F7C3706B629A695CB7B2D4F7516E5 /* Pods-ATMVVMDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ATMVVMDemo"; path = Pods_ATMVVMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37FA84D67864F4BD4839C2438F866FCE /* UITableView+ATMVVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ATMVVM.m"; path = "ATMVVM/Classes/UITableView+ATMVVM.m"; sourceTree = "<group>"; };
+		3D20831E843059B4CA93FF23102DAF4D /* ATMVVM_Collection_ReusableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_ReusableView.m; sourceTree = "<group>"; };
+		3EC9764543560559D00DF5F28A7CDA21 /* ATMVVM_Table_SectionVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_SectionVM.m; sourceTree = "<group>"; };
+		41F01EF46A8899A514B021219AD853EC /* UITableView+ATMVVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+ATMVVM.h"; path = "ATMVVM/Classes/UITableView+ATMVVM.h"; sourceTree = "<group>"; };
+		53A96279C15509D544A97588C2CC3162 /* ATMVVM_Table_SectionVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_SectionVM.h; sourceTree = "<group>"; };
+		5F12B38A35FD24CD7635E70781271588 /* ATMVVM_Collection_Cell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_Cell.m; sourceTree = "<group>"; };
+		605A499290A98067AFD4D33AA94D58EF /* UICollectionView+ATMVVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+ATMVVM.m"; path = "ATMVVM/Classes/UICollectionView+ATMVVM.m"; sourceTree = "<group>"; };
+		6254FE657965211A55B923B0379F1CDD /* Pods-ATMVVMDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ATMVVMDemo-umbrella.h"; sourceTree = "<group>"; };
+		660590008387C5C42F8965D7F719A76E /* Pods-ATMVVMDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMVVMDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6817D6F883DC64EA4A56D5A1099245D0 /* Pods-ATMVVMDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ATMVVMDemo-dummy.m"; sourceTree = "<group>"; };
+		690F7EB503A76D7DC1804A7125A37950 /* ATMVVM_Collection_SectionVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_SectionVM.h; sourceTree = "<group>"; };
+		698BD7C1163D03F003CDDBFB10BACDAE /* Pods-ATMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6E07B9841DC7DDBC3C33EDDCADFEC6E4 /* ATMVVM_Collection_Cell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_Cell.h; sourceTree = "<group>"; };
+		6EE5CA94FC16B8A33D574215AF08A0AB /* ATMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ATMVVM.release.xcconfig; sourceTree = "<group>"; };
+		70CF1F839476427500AAA2649BA671FB /* UICollectionView+ATMVVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+ATMVVM.h"; path = "ATMVVM/Classes/UICollectionView+ATMVVM.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		776C67177D733A7F5D4D555F8F9E3080 /* ATMVVM_Collection_Proxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_Proxy.m; sourceTree = "<group>"; };
+		880CB0E26315ED4B51B1D3F20D7F32AF /* ATMVVM_Table_HeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_HeaderFooterView.m; sourceTree = "<group>"; };
+		8CE3C9002831D3A4F0F85EC81A5D759F /* ATMVVM_Table_RowVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_RowVM.h; sourceTree = "<group>"; };
+		930B84F969693DD88FD0E71E785CC2DB /* ATMVVM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ATMVVM-dummy.m"; sourceTree = "<group>"; };
+		9666595257538AEC117F693262EA663B /* ATMVVM_Table_Proxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_Proxy.m; sourceTree = "<group>"; };
+		99ED8AF15C429F8866A235117A894E72 /* ATMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ATMVVM.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD7DB4C127D2A3A3F57374B4BCC2D78 /* ATMVVM.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ATMVVM.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1729814898A74A5F11DFDF8163C8F98 /* Pods-ATMVVMDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMVVMDemo-Info.plist"; sourceTree = "<group>"; };
+		A4D66C2BFA5AB4457A9CF21D45839365 /* ATMVVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ATMVVM.modulemap; sourceTree = "<group>"; };
+		A6FF98A101555CCEC186F3E4B3A791FC /* ATMVVM_Collection_ReusableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_ReusableView.h; sourceTree = "<group>"; };
+		B83690E274846EF8A2C6417A9CC945F7 /* Pods-ATMVVMDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMVVMDemo-frameworks.sh"; sourceTree = "<group>"; };
+		C15ED1A15034FEE4BC30B5E116ECAD1B /* ATMVVM_Table_Cell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_Cell.h; sourceTree = "<group>"; };
+		C68F9AACC9562FD31888AEF8F1BE1086 /* ATMVVM_Table_ListVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_ListVM.h; sourceTree = "<group>"; };
+		C758D421AEA18857A14D204697BA3108 /* ATMVVM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ATMVVM-umbrella.h"; sourceTree = "<group>"; };
+		CB746458991DEA3E2FF3CAC542E4B619 /* ATMVVMDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ATMVVMDefine.h; path = ATMVVM/Classes/ATMVVMDefine.h; sourceTree = "<group>"; };
+		CDDA8918A88102D3F4D30D5076D3A3B5 /* ATMVVM_Collection_ItemVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_ItemVM.h; sourceTree = "<group>"; };
+		CE2A933D6E72AC01C6D7996D631DBC6A /* ATMVVM_Table_HeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_HeaderFooterView.h; sourceTree = "<group>"; };
+		CE443C83A4C7C9B602BF7AA0462F71C3 /* ATMVVM-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ATMVVM-Info.plist"; sourceTree = "<group>"; };
+		CEA9E048356DA053813C63856DA83957 /* ATMVVM */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ATMVVM; path = ATMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28A336D2FBD887F590A8B32760A1A3F /* ATMVVM_Collection_ItemVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_ItemVM.m; sourceTree = "<group>"; };
+		DDA3BF897135D155E55A1B2C08802EF1 /* Pods-ATMVVMDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ATMVVMDemo.modulemap"; sourceTree = "<group>"; };
+		DF9DF2F481895E709EE0FF4F0C81231A /* Pods-ATMVVMDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATMVVMDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB8413F99AB0283C72959B28FEDEAE47 /* Pods-ATMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EC8A3A5347945CEA12CF3EE7B3499D92 /* ATMVVM_Collection_Proxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_Proxy.h; sourceTree = "<group>"; };
+		F4E1C0ECCA9C54B3311B2D2339D25C23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F6B61BBAFF7FBE51C56442406B5F8A5E /* ATMVVM_Table_RowVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Table_RowVM.m; sourceTree = "<group>"; };
+		FAD61D05AE20EED508D505A19013FA01 /* ATMVVM_Collection_ListVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Collection_ListVM.h; sourceTree = "<group>"; };
+		FAEE1A9927C5EA919D82746CF2451498 /* ATMVVM_Table_Proxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATMVVM_Table_Proxy.h; sourceTree = "<group>"; };
+		FFF2643E59296CB80A68316E58BE43A1 /* ATMVVM_Collection_SectionVM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATMVVM_Collection_SectionVM.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20EBEBF5D8B6EE42ADF0A128614D8067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBB1675DA7641F77960B39755D8D82A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8267A3A4E873F863F802A972DFBAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575CD4A40208E296F787B91E96C21B07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D0F79A6C6CC4D2AABBA97617541691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9E048356DA053813C63856DA83957 /* ATMVVM */,
+				2B8F7C3706B629A695CB7B2D4F7516E5 /* Pods-ATMVVMDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		60BCA7949729CA69C97F1F9D4E534A65 /* ATMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				2661660081E1A9A286F430FF2535555C /* ATMVVM.h */,
+				CB746458991DEA3E2FF3CAC542E4B619 /* ATMVVMDefine.h */,
+				70CF1F839476427500AAA2649BA671FB /* UICollectionView+ATMVVM.h */,
+				605A499290A98067AFD4D33AA94D58EF /* UICollectionView+ATMVVM.m */,
+				41F01EF46A8899A514B021219AD853EC /* UITableView+ATMVVM.h */,
+				37FA84D67864F4BD4839C2438F866FCE /* UITableView+ATMVVM.m */,
+				B23A3F094B85EBDCA6363EA05FF7D2EF /* Collection */,
+				A5D0271823ECF5158CC0AF00B78BB594 /* Pod */,
+				D278AD4913330407D62984C5AD3EC89C /* Support Files */,
+				61AD534E7981E19F4D3B3ACECFEB9911 /* Table */,
+			);
+			name = ATMVVM;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		61AD534E7981E19F4D3B3ACECFEB9911 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				C15ED1A15034FEE4BC30B5E116ECAD1B /* ATMVVM_Table_Cell.h */,
+				0D8E3134312903CAE65658D7FBD23DC4 /* ATMVVM_Table_Cell.m */,
+				CE2A933D6E72AC01C6D7996D631DBC6A /* ATMVVM_Table_HeaderFooterView.h */,
+				880CB0E26315ED4B51B1D3F20D7F32AF /* ATMVVM_Table_HeaderFooterView.m */,
+				C68F9AACC9562FD31888AEF8F1BE1086 /* ATMVVM_Table_ListVM.h */,
+				278933886CCE89A12F3F195AA246BA81 /* ATMVVM_Table_ListVM.m */,
+				FAEE1A9927C5EA919D82746CF2451498 /* ATMVVM_Table_Proxy.h */,
+				9666595257538AEC117F693262EA663B /* ATMVVM_Table_Proxy.m */,
+				8CE3C9002831D3A4F0F85EC81A5D759F /* ATMVVM_Table_RowVM.h */,
+				F6B61BBAFF7FBE51C56442406B5F8A5E /* ATMVVM_Table_RowVM.m */,
+				53A96279C15509D544A97588C2CC3162 /* ATMVVM_Table_SectionVM.h */,
+				3EC9764543560559D00DF5F28A7CDA21 /* ATMVVM_Table_SectionVM.m */,
+			);
+			name = Table;
+			path = ATMVVM/Classes/Table;
+			sourceTree = "<group>";
+		};
+		A5D0271823ECF5158CC0AF00B78BB594 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9FD7DB4C127D2A3A3F57374B4BCC2D78 /* ATMVVM.podspec */,
+				27C414D288422F0E100E08E69BF5D9DE /* LICENSE */,
+				F4E1C0ECCA9C54B3311B2D2339D25C23 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B23A3F094B85EBDCA6363EA05FF7D2EF /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				6E07B9841DC7DDBC3C33EDDCADFEC6E4 /* ATMVVM_Collection_Cell.h */,
+				5F12B38A35FD24CD7635E70781271588 /* ATMVVM_Collection_Cell.m */,
+				CDDA8918A88102D3F4D30D5076D3A3B5 /* ATMVVM_Collection_ItemVM.h */,
+				D28A336D2FBD887F590A8B32760A1A3F /* ATMVVM_Collection_ItemVM.m */,
+				FAD61D05AE20EED508D505A19013FA01 /* ATMVVM_Collection_ListVM.h */,
+				2301082A4EFB48A90B1947CD0695D34B /* ATMVVM_Collection_ListVM.m */,
+				EC8A3A5347945CEA12CF3EE7B3499D92 /* ATMVVM_Collection_Proxy.h */,
+				776C67177D733A7F5D4D555F8F9E3080 /* ATMVVM_Collection_Proxy.m */,
+				A6FF98A101555CCEC186F3E4B3A791FC /* ATMVVM_Collection_ReusableView.h */,
+				3D20831E843059B4CA93FF23102DAF4D /* ATMVVM_Collection_ReusableView.m */,
+				690F7EB503A76D7DC1804A7125A37950 /* ATMVVM_Collection_SectionVM.h */,
+				FFF2643E59296CB80A68316E58BE43A1 /* ATMVVM_Collection_SectionVM.m */,
+			);
+			name = Collection;
+			path = ATMVVM/Classes/Collection;
+			sourceTree = "<group>";
+		};
+		C45E1E75F18DD46B81E643F96BBB16E5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7D62999E4178BB5E196A3FF5FC846 /* Pods-ATMVVMDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E7DF303861B59F0F3C83D98500A5889F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				56D0F79A6C6CC4D2AABBA97617541691 /* Products */,
+				C45E1E75F18DD46B81E643F96BBB16E5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D278AD4913330407D62984C5AD3EC89C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D66C2BFA5AB4457A9CF21D45839365 /* ATMVVM.modulemap */,
+				930B84F969693DD88FD0E71E785CC2DB /* ATMVVM-dummy.m */,
+				CE443C83A4C7C9B602BF7AA0462F71C3 /* ATMVVM-Info.plist */,
+				0A9729F2508E8B31D059817765553194 /* ATMVVM-prefix.pch */,
+				C758D421AEA18857A14D204697BA3108 /* ATMVVM-umbrella.h */,
+				99ED8AF15C429F8866A235117A894E72 /* ATMVVM.debug.xcconfig */,
+				6EE5CA94FC16B8A33D574215AF08A0AB /* ATMVVM.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "ATMVVMDemo/Pods/Target Support Files/ATMVVM";
+			sourceTree = "<group>";
+		};
+		E7DF303861B59F0F3C83D98500A5889F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60BCA7949729CA69C97F1F9D4E534A65 /* ATMVVM */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F8F7D62999E4178BB5E196A3FF5FC846 /* Pods-ATMVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DDA3BF897135D155E55A1B2C08802EF1 /* Pods-ATMVVMDemo.modulemap */,
+				DF9DF2F481895E709EE0FF4F0C81231A /* Pods-ATMVVMDemo-acknowledgements.markdown */,
+				660590008387C5C42F8965D7F719A76E /* Pods-ATMVVMDemo-acknowledgements.plist */,
+				6817D6F883DC64EA4A56D5A1099245D0 /* Pods-ATMVVMDemo-dummy.m */,
+				B83690E274846EF8A2C6417A9CC945F7 /* Pods-ATMVVMDemo-frameworks.sh */,
+				A1729814898A74A5F11DFDF8163C8F98 /* Pods-ATMVVMDemo-Info.plist */,
+				6254FE657965211A55B923B0379F1CDD /* Pods-ATMVVMDemo-umbrella.h */,
+				698BD7C1163D03F003CDDBFB10BACDAE /* Pods-ATMVVMDemo.debug.xcconfig */,
+				EB8413F99AB0283C72959B28FEDEAE47 /* Pods-ATMVVMDemo.release.xcconfig */,
+			);
+			name = "Pods-ATMVVMDemo";
+			path = "Target Support Files/Pods-ATMVVMDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		241B0462DEC331450B3D640C1B00609C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE5CD996C6528F26C1FC9EB1C1ADCB6 /* ATMVVM.h in Headers */,
+				9CF7C6B03B4E09A58E1740805BA23726 /* ATMVVM-umbrella.h in Headers */,
+				99080F6EAD4510FC2293F89BA66B2B30 /* ATMVVM_Collection_Cell.h in Headers */,
+				48C7700D9CAB78E4C0EBA5D43D10D246 /* ATMVVM_Collection_ItemVM.h in Headers */,
+				35F223D69184E979513D703BD2DCBF02 /* ATMVVM_Collection_ListVM.h in Headers */,
+				B9527D04E755F267C749E492764D7913 /* ATMVVM_Collection_Proxy.h in Headers */,
+				7D292A50F045393874651BE1B1B745DA /* ATMVVM_Collection_ReusableView.h in Headers */,
+				B20DCDD46D3A66114AF3155743950B8E /* ATMVVM_Collection_SectionVM.h in Headers */,
+				FE170867B5BE0C8AFDFA34E654E85780 /* ATMVVM_Table_Cell.h in Headers */,
+				450DD3F7B6B3E7EF69CE2AD059DF2B1D /* ATMVVM_Table_HeaderFooterView.h in Headers */,
+				AF568036446840FDFCDA153B29233A15 /* ATMVVM_Table_ListVM.h in Headers */,
+				98EA92CE344D120D98FE5A8F94A44F2F /* ATMVVM_Table_Proxy.h in Headers */,
+				3BEC9FF2BF2251949F86E9265883AE03 /* ATMVVM_Table_RowVM.h in Headers */,
+				1F096998B3B972A16E77CDC1E8777AC1 /* ATMVVM_Table_SectionVM.h in Headers */,
+				32F0DD81B94618F8C326746B8A747A53 /* ATMVVMDefine.h in Headers */,
+				CEFF734B4AE76C5DD981A9F8088E77C3 /* UICollectionView+ATMVVM.h in Headers */,
+				8AED10CBFA3B52256F8B0FD95E743911 /* UITableView+ATMVVM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6780F69B6074B08BFE554C17082CE64A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2234B2EC3BAD12265FA5F644E3B993BE /* Pods-ATMVVMDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D742B6342FC6A175F8B24DA692708C9 /* ATMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B199F0A995120CAA24D7BA1180230B5A /* Build configuration list for PBXNativeTarget "ATMVVM" */;
+			buildPhases = (
+				241B0462DEC331450B3D640C1B00609C /* Headers */,
+				93CB7403801C2E14E196C653BBE0A239 /* Sources */,
+				20EBEBF5D8B6EE42ADF0A128614D8067 /* Frameworks */,
+				A24EF173421B958FBA7CECB99DC07CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMVVM;
+			productName = ATMVVM;
+			productReference = CEA9E048356DA053813C63856DA83957 /* ATMVVM */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE15867EAEEACA7B8685AB01F7A02CF3 /* Pods-ATMVVMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172DEDE64F703F59527D9D3EB2EEA7AC /* Build configuration list for PBXNativeTarget "Pods-ATMVVMDemo" */;
+			buildPhases = (
+				6780F69B6074B08BFE554C17082CE64A /* Headers */,
+				0D10C1DC3E5F90A2E34DB5D8169F4B4C /* Sources */,
+				FF8267A3A4E873F863F802A972DFBAEB /* Frameworks */,
+				6032A1E5E2D9B93E5140C53D043B9E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90F8EB119DEB39949C7419DEABB02A86 /* PBXTargetDependency */,
+			);
+			name = "Pods-ATMVVMDemo";
+			productName = Pods_ATMVVMDemo;
+			productReference = 2B8F7C3706B629A695CB7B2D4F7516E5 /* Pods-ATMVVMDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 56D0F79A6C6CC4D2AABBA97617541691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D742B6342FC6A175F8B24DA692708C9 /* ATMVVM */,
+				DE15867EAEEACA7B8685AB01F7A02CF3 /* Pods-ATMVVMDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6032A1E5E2D9B93E5140C53D043B9E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24EF173421B958FBA7CECB99DC07CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D10C1DC3E5F90A2E34DB5D8169F4B4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DE9661348114D44340B61EE1435995 /* Pods-ATMVVMDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CB7403801C2E14E196C653BBE0A239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141BE42334B42ECA3657FDFAA6ED54E7 /* ATMVVM-dummy.m in Sources */,
+				4A8AEA8B3225A158F63D00F5C7827840 /* ATMVVM_Collection_Cell.m in Sources */,
+				21FC11033E849F93CBF4F7A95BC186C0 /* ATMVVM_Collection_ItemVM.m in Sources */,
+				A19D513A0644F1100A1988B4993FF5E8 /* ATMVVM_Collection_ListVM.m in Sources */,
+				D186D3CF808A9515A9AFF7C57A784D1C /* ATMVVM_Collection_Proxy.m in Sources */,
+				E52CCF6BE75B369C706B32D7BBCCC720 /* ATMVVM_Collection_ReusableView.m in Sources */,
+				2DBDEAAEF6618E62F9C2752E33A7D273 /* ATMVVM_Collection_SectionVM.m in Sources */,
+				95645C77F003C9EC05288F9F6792E4C1 /* ATMVVM_Table_Cell.m in Sources */,
+				45CE32F5EADAEAC6BB83D73929005AAF /* ATMVVM_Table_HeaderFooterView.m in Sources */,
+				26E4CDCBC812456A9E3C8CD49B923319 /* ATMVVM_Table_ListVM.m in Sources */,
+				5C71851CB9C8015D0CA52ED59077C0A9 /* ATMVVM_Table_Proxy.m in Sources */,
+				D8EC72F4139FF4FCD0CF7E5D991005EF /* ATMVVM_Table_RowVM.m in Sources */,
+				EA23C3114DC47288CE5A8EEA949AF389 /* ATMVVM_Table_SectionVM.m in Sources */,
+				34E9DC0F5B9B4598BEE5CE5FCD9A7312 /* UICollectionView+ATMVVM.m in Sources */,
+				BBAF0161A11000FF214A4BDA407F0606 /* UITableView+ATMVVM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90F8EB119DEB39949C7419DEABB02A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ATMVVM;
+			target = 6D742B6342FC6A175F8B24DA692708C9 /* ATMVVM */;
+			targetProxy = 8FFF40FC7C075E661BC4A3FD62174BAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16467A8811A7AF20367D4A41382D6D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE5CA94FC16B8A33D574215AF08A0AB /* ATMVVM.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ATMVVM/ATMVVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ATMVVM/ATMVVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ATMVVM/ATMVVM.modulemap";
+				PRODUCT_MODULE_NAME = ATMVVM;
+				PRODUCT_NAME = ATMVVM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76C3EF9548F54A7F14B491C4A418C520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698BD7C1163D03F003CDDBFB10BACDAE /* Pods-ATMVVMDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ATMVVMDemo/Pods-ATMVVMDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ATMVVMDemo/Pods-ATMVVMDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A3F3371963C9BDC9E2AC8DC8E1442877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99ED8AF15C429F8866A235117A894E72 /* ATMVVM.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ATMVVM/ATMVVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ATMVVM/ATMVVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ATMVVM/ATMVVM.modulemap";
+				PRODUCT_MODULE_NAME = ATMVVM;
+				PRODUCT_NAME = ATMVVM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1EE594603D80F9DEF6FE0E84B7E50D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8413F99AB0283C72959B28FEDEAE47 /* Pods-ATMVVMDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ATMVVMDemo/Pods-ATMVVMDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ATMVVMDemo/Pods-ATMVVMDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172DEDE64F703F59527D9D3EB2EEA7AC /* Build configuration list for PBXNativeTarget "Pods-ATMVVMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C3EF9548F54A7F14B491C4A418C520 /* Debug */,
+				F1EE594603D80F9DEF6FE0E84B7E50D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B199F0A995120CAA24D7BA1180230B5A /* Build configuration list for PBXNativeTarget "ATMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F3371963C9BDC9E2AC8DC8E1442877 /* Debug */,
+				16467A8811A7AF20367D4A41382D6D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

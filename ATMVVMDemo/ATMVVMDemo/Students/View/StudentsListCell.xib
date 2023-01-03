@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StudentsListCell" customModule="ATMVVMDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gb-8f-A3J">
+                        <rect key="frame" x="10" y="10" width="421" height="20"/>
+                        <color key="backgroundColor" red="0.17924118319999999" green="0.76942896839999997" blue="0.2107315542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="L7g-bf-ItG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-co-x4T">
+                        <rect key="frame" x="10" y="40" width="421" height="20"/>
+                        <color key="backgroundColor" red="0.78110617399215698" green="0.56380502743236738" blue="0.254074291195099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gQO-hi-6f1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-su-iBs">
+                        <rect key="frame" x="10" y="70" width="421" height="20"/>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.51080954893910635" blue="0.56064479326952621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8ai-k4-W5C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIM-Zb-apo">
+                        <rect key="frame" x="0.0" y="99.5" width="441" height="0.5"/>
+                        <color key="backgroundColor" red="1" green="0.21360845292191122" blue="0.11236571958930275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="pn0-IC-7qG"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZD-h5-sN6">
+                        <rect key="frame" x="331" y="35" width="100" height="31"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="A6B-0F-dTj"/>
+                            <constraint firstAttribute="height" constant="31" id="RYA-uw-Yce"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="切换性别"/>
+                        <connections>
+                            <action selector="clickChangeGenderButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Kxe-Ra-mRD"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray4Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rH4-su-iBs" secondAttribute="trailing" constant="10" id="4VQ-8z-z0u"/>
+                <constraint firstItem="2Gb-8f-A3J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="8zo-dv-IlC"/>
+                <constraint firstAttribute="trailing" secondItem="QZD-h5-sN6" secondAttribute="trailing" constant="10" id="Bh8-eC-j8T"/>
+                <constraint firstItem="QZD-h5-sN6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="HDn-Aw-WpG"/>
+                <constraint firstAttribute="trailing" secondItem="gIM-Zb-apo" secondAttribute="trailing" id="MbJ-g1-6lp"/>
+                <constraint firstAttribute="trailing" secondItem="gDq-co-x4T" secondAttribute="trailing" constant="10" id="NbS-Df-bIM"/>
+                <constraint firstAttribute="trailing" secondItem="2Gb-8f-A3J" secondAttribute="trailing" constant="10" id="R3v-BK-kJN"/>
+                <constraint firstAttribute="bottom" secondItem="gIM-Zb-apo" secondAttribute="bottom" id="R8T-7d-3js"/>
+                <constraint firstItem="gIM-Zb-apo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SHt-HH-aAz"/>
+                <constraint firstItem="rH4-su-iBs" firstAttribute="top" secondItem="gDq-co-x4T" secondAttribute="bottom" constant="10" id="SbS-fE-1MR"/>
+                <constraint firstItem="gDq-co-x4T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="bZl-W5-FeZ"/>
+                <constraint firstItem="rH4-su-iBs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="e4e-zK-PjA"/>
+                <constraint firstItem="2Gb-8f-A3J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="gOu-Kk-P5e"/>
+                <constraint firstItem="gDq-co-x4T" firstAttribute="top" secondItem="2Gb-8f-A3J" secondAttribute="bottom" constant="10" id="wsi-3o-eHz"/>
+            </constraints>
+            <size key="customSize" width="441" height="100"/>
+            <connections>
+                <outlet property="genderLabel" destination="gDq-co-x4T" id="jtc-tV-qSB"/>
+                <outlet property="introduceHeight" destination="8ai-k4-W5C" id="rSa-Qu-2GL"/>
+                <outlet property="introduceLabel" destination="rH4-su-iBs" id="V30-Zt-aE9"/>
+                <outlet property="nameLabel" destination="2Gb-8f-A3J" id="djf-4p-pKw"/>
+            </connections>
+            <point key="canvasLocation" x="-251.44927536231887" y="74.330357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
